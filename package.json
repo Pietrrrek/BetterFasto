@@ -1,0 +1,25 @@
+{
+    "name": "betterfasto",
+    "displayName": "BetterFasto",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fasto",
+            "aliases": ["Fasto", "fasto"],
+            "extensions": [".fo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fasto",
+            "scopeName": "source.fasto",
+            "path": "./syntaxes/fasto.tmLanguage.json"
+        }]
+    }
+}

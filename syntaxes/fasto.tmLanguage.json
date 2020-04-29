@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Fasto",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#support"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+			{
+				"name": "keyword.control.fasto",
+				"match": "\\b(if|then|else|let|in|fun|fn|op)\\b"
+			},
+			{
+				"name": "keyword.operator.fasto",
+				"match": "((=>)|(&&)|(not)|\\|\\|)"
+			}]
+		},
+		"comments": {
+			"name": "comment.line.double-dash.fasto",
+			"match": "(\/\/.*)"
+		},
+		"support": {
+			"patterns": [
+				{
+					"name": "support.type.fasto",
+					"match": "\\b(int|bool|char)\\b"
+				},
+				{
+					"name": "support.function.fasto",
+					"match": "\\b(read|write|iota|map|reduce|replicate|filter|scan)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.fasto",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+					"name": "constant.character.escape.fasto",
+					"match": "\\\\."
+			}]
+		}
+	},
+	"scopeName": "source.fasto"
+}
