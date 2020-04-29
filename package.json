@@ -1,8 +1,12 @@
 {
     "name": "betterfasto",
     "displayName": "BetterFasto",
-    "description": "",
-    "version": "0.0.1",
+    "description": "A simple code highlighter for the Fasto programming language used in the course Implementation of Programming Languages over at the University of Copenhagen.",
+    "version": "0.5.0",
+    "publisher": "pietrrrek",
+    "repository": {
+        "url": "https://github.com/Pietrrrek/BetterFasto"
+    },
     "engines": {
         "vscode": "^1.44.0"
     },
